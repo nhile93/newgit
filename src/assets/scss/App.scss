@@ -1,0 +1,56 @@
+$color: #222;
+$width: 800px;
+$height: 80px;
+
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: $height;
+}
+
+.App-header {
+  background-color: $color;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.container .list-group-item.active {
+  z-index: 2;
+  color: #000;
+  background-color: #ffffff;
+  border-color: #c2c2c2;
+}
+
+.list-group-item:hover{
+  background-color: #f6f6f6;
+}
+
+.break-word { word-wrap: break-word;}
+
+.limitText{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btnSearch{
+    margin-top: 10px;
+  }
+  .container .fillterBar{
+    padding: 0px;
+  }
+}
