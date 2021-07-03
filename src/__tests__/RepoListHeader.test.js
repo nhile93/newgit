@@ -7,7 +7,7 @@ import Adapter from 'enzyme-adapter-react-16'
 configure({ adapter: new Adapter() })
 
 describe('RepoListHeader', () => {
-    var repos = [ "some-repository", "some-other-repository" ];
+    let repos = [ "some-repository", "some-other-repository" ];
 
     it('renders without crashing when list is empty', () => {
         shallow(<RepoListHeader />);

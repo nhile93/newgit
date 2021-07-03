@@ -6,7 +6,7 @@ import { ListGroupItem } from 'react-bootstrap';
 import TimeAgo from 'react-timeago';
 
 describe('RepoRow', () => {
-    var repo = {
+    let repo = {
         "name": "some-repository",
         "html_url": "https://some-url.com",
         "description": "Some description goes here.",
